@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="283dp"
+            android:layout_height="164dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_marginBottom="50dp"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/viewUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"
+            android:textColor="#1EB9C5"
+            android:textStyle="bold"
+            android:clickable="true"/>
+
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#1F846E"/>
+
+        <TextView
+            android:id="@+id/viewSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/senha"
+            android:textColor="#8A2FF3"
+            android:textStyle="bold"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="198dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:onClick="btnEntrar"
+            android:text="@string/entrar" />
+    </LinearLayout>
+
+</LinearLayout>

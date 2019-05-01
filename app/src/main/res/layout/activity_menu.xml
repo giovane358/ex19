@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        style="@style/titulo"
+        android:text="@string/app_name"
+/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/verde">
+
+        <TextView
+            android:id="@+id/viewNovoGasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/novoGasto"
+            style="@style/ItemMenu"
+            android:drawableTop="@drawable/novo_gasto"
+            />
+
+        <TextView
+            android:id="@+id/viewNovaViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/viewNovoGasto"
+            android:layout_marginRight="50dp"
+            android:text="@string/novaViagem"
+            style="@style/ItemMenu"
+            android:drawableTop="@drawable/nova_viagem"
+            />
+
+        <TextView
+            android:id="@+id/viewMinhasViagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/viewNovoGasto"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:text="@string/minhasViagens"
+            style="@style/ItemMenu"
+            android:drawableTop="@drawable/minhas_viagens"
+            />
+
+        <TextView
+            android:id="@+id/viewConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/viewNovaViagem"
+            android:layout_alignBottom="@id/viewMinhasViagens"
+            android:text="@string/config"
+            style="@style/ItemMenu"
+            android:drawableTop="@drawable/configuracoes"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

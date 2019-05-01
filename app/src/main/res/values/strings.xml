@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BoaViagem</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="novoGasto">Novo Gasto</string>
+    <string name="novaViagem">Nova Viagem</string>
+    <string name="minhasViagens">Minhas Viagens</string>
+    <string name="config">Configurações</string>
+    <string name="destino">Destino</string>
+    <string name="tipoViagem">Tipo da viagem</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negócio</string>
+    <string name="dataChegada">Data da chegada</string>
+    <string name="dataSaida">Data da saída</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="quantidadePessoas">No . de pessoas</string>
+
+    <string name="selecione">Selecione</string>
+
+    <string name="salvar">Salvar</string>
+</resources>
+
+

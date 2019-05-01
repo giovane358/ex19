@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovoGasto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/azul"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo"
+                android:text="@string/novoGasto" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+
+            <TextView
+                android:id="@+id/txtTipoGasto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Gasto"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="43dp" />
+
+            <Spinner
+                android:id="@+id/spnTipoGasto"
+                android:layout_width="455dp"
+                android:layout_height="22dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="62dp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/txtValor"
+                android:layout_width="39dp"
+                android:layout_height="19dp"
+                android:text="Valor"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="109dp" />
+
+            TableRow/>
+                android:layout_width="match_parent"
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+            <Button
+                android:id="@+id/btnData"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="215dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+
+
+            <TextView
+                android:id="@+id/txtDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="212dp" />
+
+
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="241dp" />
+
+            <TextView
+                android:id="@+id/txtLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="295dp" />
+
+
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="328dp" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                tools:layout_editor_absoluteX="-6dp"
+                tools:layout_editor_absoluteY="397dp" />
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
