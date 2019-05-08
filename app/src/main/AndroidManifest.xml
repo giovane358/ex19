@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.etechoracio.boaviagem">
+    package="br.com.etechoracio.viagem">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NovoGasto"
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ViagemActivity">
+
+        </activity>
+        <activity android:name=".GastoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MenuActivity" />
     </application>
 
 </manifest>

@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ViagemActivity">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,13 +13,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/azul"
             android:orientation="vertical">
 
             <TextView
                 style="@style/titulo"
                 android:text="@string/novaViagem" />
+
         </LinearLayout>
 
         <TableLayout
@@ -29,122 +28,119 @@
             android:layout_height="wrap_content"
             android:stretchColumns="0,1">
 
-
-        <TextView
-            android:id="@+id/txtDestino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/destino" />
-
-        <EditText
-            android:id="@+id/editDestino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-             />
-
-        <TextView
-            android:id="@+id/txtTipoViagem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tipoViagem" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioLazer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/lazer" />
-
-            <RadioButton
-                android:id="@+id/radioNegocio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="130dp"
-                android:text="@string/negocios" />
-        </RadioGroup>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
             <TextView
-                android:id="@+id/txtRow1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/dataChegada" />
-
-            <TextView
-                android:id="@+id/txtRow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/dataSaida" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <Button
-                android:id="@+id/dataChegada"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/selecione" />
-
-            <Button
-                android:id="@+id/dataSaida"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/selecione" />
-        </TableRow>
-
-        <TextView
-            android:id="@+id/txtOrcamento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/orcamento" />
-
-        <EditText
-            android:id="@+id/orcamento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-             />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-            android:id="@+id/txtQtdPessoa"
-                android:layout_width="wrap_content"
-                android:text="@string/quantidadePessoas" />
+                android:text="@string/destino" />
 
             <EditText
-                android:id="@+id/quantidadePessoas"
-                android:layout_width="wrap_content"
+                android:id="@+id/editDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipoViagem" />
+
+            <RadioGroup
+                android:id="@+id/groupTipoViagem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLazer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/lazer" />
+
+                <RadioButton
+                    android:id="@+id/radioNegocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:text="@string/negocios" />
+
+            </RadioGroup>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dataChegada" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dataSaida" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/dataChegada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/selecione" />
+
+                <Button
+                    android:id="@+id/btnDataSaida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/selecione" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/orcamento" />
+
+            <EditText
+                android:id="@+id/orcamento"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
-        </TableRow>
+                android:inputType="numberDecimal" />
 
-        <Button
-            android:id="@+id/btnSalvar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/salvar" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/quantidadePessoas" />
 
+                <EditText
+                    android:id="@+id/quantidadePessoas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salvar" />
 
         </TableLayout>
+
+
     </LinearLayout>
+
 </ScrollView>

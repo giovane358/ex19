@@ -13,14 +13,13 @@
         <item name="android:textStyle">bold</item>
         <item name="android:clickable">true</item>
     </style>
-    
+
     <style name="titulo">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:textColor">@color/verde</item>
+        <item name="android:textColor">@color/branco</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
-
 </resources>
